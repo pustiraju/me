@@ -59,12 +59,15 @@ document.querySelectorAll("form").forEach((form) => {
                 alert("submitted sucessfully")
 
             })
+            .then(() => {
+                document.getElementById("reset").addEventListener("click", () => {
+                    document.getElementById("name").value = ""
+                    document.getElementById("email").value = ""
+                    document.getElementById("message").value = ""
+                })
+            })
     });
 });
 
-document.getElementById("reset").addEventListener("click", () => {
-    document.getElementById("name").value = ""
-    document.getElementById("email").value = ""
-    document.getElementById("message").value = ""
-})
+
 
