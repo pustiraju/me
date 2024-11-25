@@ -56,13 +56,24 @@ document.querySelectorAll("form").forEach((form) => {
                 res.json()
             })
             .then((res) => {
-                alert("submitted sucessfully")
+                alert("Submitted Sucessfully")
 
             })
-           
-           
+            .then((res) => {
+                window.location.reload()
+
+            })
+
     });
 });
+
+document.getElementById("reset").addEventListener("click", () => {
+    document.getElementById("name").value = ""
+    document.getElementById("email").value = ""
+    document.getElementById("message").value = ""
+})
+
+
 
 
 
