@@ -56,7 +56,10 @@ document.querySelectorAll("form").forEach((form) => {
                 res.json()
             })
             .then((res) => {
-                alert("Submitted Sucessfully")
+              const messageDiv = document.getElementById("message");
+        messageDiv.style.display = "block"; // Make the message visible
+        messageDiv.style.color = "green"; // Set the color to green for success
+        messageDiv.textContent = "Submitted Successfully!";
 
             })
             .then((res) => {
