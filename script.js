@@ -23,7 +23,7 @@ function animateSkillBars() {
     });
 }
 
-// Trigger skill bar animation when the skills section is in view
+// Trigger skill bar animation when the skills sec
 const skillsSection = document.getElementById('skills');
 const observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
