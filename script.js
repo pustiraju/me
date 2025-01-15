@@ -56,7 +56,7 @@ document.querySelectorAll("form").forEach((form) => {
                 res.json()
             })
             .then((res) => {
-        alert("Submitted Sucessfully")
+        window.alert("Submitted Sucessfully")
 
             })
             .then((res) => {
