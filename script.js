@@ -44,7 +44,7 @@ document.querySelectorAll("form").forEach((form) => {
             message: document.getElementById("message").value
 
         }
-        fetch("https://script.google.com/macros/s/AKfycbw3-X4oE-aoFUqFBXJyR33rTa7BB96q4LNXnXZy9kzdDK2dmJe3Bvt5OsezN_jBUmCdOA/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbzie8w3h2mJv03Z117ZoSlpg7qDHtFZTlAAd6JiUyuWxxLWZToFrReNhPN2rs8giguCXw/exec", {
             method: "POST",
             header: {
                 "content-type": "application/json"
